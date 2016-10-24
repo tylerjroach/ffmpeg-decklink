@@ -7,5 +7,5 @@
 
 ```bash
 brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb
-brew install https://github.com/jbilay/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb --with-decklink
+brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb --with-decklink
 ```
