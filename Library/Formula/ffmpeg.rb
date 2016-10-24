@@ -93,7 +93,6 @@ class Ffmpeg < Formula
     args << "--enable-opencl" if MacOS.version > :lion
     args << "--enable-libx264" if build.with? "x264"
     args << "--enable-libmp3lame" if build.with? "lame"
-    args << "--enable-libvo-aacenc" if build.with? "libvo-aacenc"
     args << "--enable-libxvid" if build.with? "xvid"
     args << "--enable-libsnappy" if build.with? "snappy"
 
