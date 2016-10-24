@@ -71,11 +71,11 @@ class Ffmpeg < Formula
   depends_on "libbs2b" => :optional
   depends_on "decklink" if build.with? "decklink"
 
-  if build.with? "decklink"
-    # patch `common.mk` for using `clang++` to compile `.cpp` files,
-    # by removing `-std=c99` from `CXXFLAGS`.
-    patch :DATA
-  end
+  #if build.with? "decklink"
+  #  # patch `common.mk` for using `clang++` to compile `.cpp` files,
+  #  # by removing `-std=c99` from `CXXFLAGS`.
+  #  patch :DATA
+  #end
 
   def install
     args = ["--prefix=#{prefix}",
