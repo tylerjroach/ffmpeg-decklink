@@ -8,7 +8,6 @@ class Ffmpeg < Formula
 
   option "without-x264", "Disable H.264 encoder"
   option "without-lame", "Disable MP3 encoder"
-  option "without-libvo-aacenc", "Disable VisualOn AAC encoder"
   option "without-xvid", "Disable Xvid MPEG-4 video encoder"
   option "without-qtkit", "Disable deprecated QuickTime framework"
 
@@ -38,7 +37,6 @@ class Ffmpeg < Formula
 
   depends_on "x264" => :recommended
   depends_on "lame" => :recommended
-  depends_on "libvo-aacenc" => :recommended
   depends_on "xvid" => :recommended
 
   depends_on "faac" => :optional
@@ -172,9 +170,6 @@ class Ffmpeg < Formula
   def caveats
     if build.without? "faac" then <<-EOS.undent
       FFmpeg has been built without libfaac for licensing reasons;
-      libvo-aacenc is used by default.
-      To install with libfaac, you can:
-        brew reinstall ffmpeg --with-faac
 
       You can also use the experimental FFmpeg encoder, libfdk-aac, or
       libvo_aacenc to encode AAC audio:
