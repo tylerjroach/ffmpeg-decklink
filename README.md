@@ -20,6 +20,16 @@ brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formul
 # Encoding Examples
 
 ```bash
+## List supported devices:
+ffmpeg -f decklink -list_devices 1 -i dummy
+```
+
+```bash
+## List supported formats:
+ffmpeg -f decklink -list_formats 1 -i 'UltraStudio 3D'
+```
+
+```bash
 ## 1280x720 @ 59.94 source:
 ffmpeg -f decklink -i "UltraStudio 3D@16" -vcodec libx264 -profile:v baseline -b:v 2500k -acodec libfaac -b:a 128k -pix_fmt yuv420p output.mp4
 ```
