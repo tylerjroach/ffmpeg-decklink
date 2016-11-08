@@ -31,7 +31,7 @@ ffmpeg -f decklink -list_formats 1 -i 'UltraStudio 3D'
 
 ```bash
 ## 1920x1080 @ 29.97 source:
-ffmpeg -f decklink -i "UltraStudio 3D@7" -vcodec libx264 -profile:v baseline -s 1280x720 -r 30000/1001 -b:v 2500k -acodec libfaac -b:a 128k -pix_fmt yuv420p output.mp4 output.mp4
+ffmpeg -f decklink -i "UltraStudio 3D@7" -vcodec libx264 -profile:v baseline -s 1280x720 -r 30000/1001 -b:v 2500k -acodec libfaac -b:a 128k -pix_fmt yuv420p output.mp4
 ```
 
 ```bash
