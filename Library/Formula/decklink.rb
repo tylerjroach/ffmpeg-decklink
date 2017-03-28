@@ -1,7 +1,7 @@
 class Decklink < Formula
-  homepage "https://github.com/jbialy/ffmpeg-decklink"
-  url "https://github.com/jbialy/ffmpeg-decklink/raw/master/decklink-api-10.7.tar.gz"
-  sha256 "1d1970fcbe04319bd31e4072a04d8e1cf71185a8f97391ed497aeb00b39ac255"
+  homepage "https://github.com/tylerjroach/ffmpeg-decklink"
+  url "https://github.com/tylerjroach/ffmpeg-decklink/raw/master/decklink-api-10.8.5.tar.gz"
+  sha256 "5676d628e3b6df01a89f51087febc4287f1d5efd463d4c4ec29dfc60de03b263"
 
   def install
     include.install Dir["include/*"]

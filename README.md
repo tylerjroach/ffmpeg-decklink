@@ -6,15 +6,15 @@
 # Usage
 
 ```bash
-brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb
-brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb --with-decklink
+brew install https://github.com/tylerjroach/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb
+brew install https://github.com/tylerjroach/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb --with-decklink
 ```
 
 To include faac support:
 
 ```bash
-brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb
-brew install https://github.com/jbialy/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb --with-decklink --with-faac
+brew install https://github.com/tylerjroach/ffmpeg-decklink/raw/master/Library/Formula/decklink.rb
+brew install https://github.com/tylerjroach/ffmpeg-decklink/raw/master/Library/Formula/ffmpeg.rb --with-decklink --with-faac
 ```
 
 # Encoding Examples
@@ -41,4 +41,4 @@ ffmpeg -f decklink -i "UltraStudio 3D@7" -vcodec prores -profile:v 2 -s 1280x720
 
 # Credits
 
-All credits go to https://github.com/dche for the original scripts! I simply modified and cleaned up the code so that it works with ffmpeg 3.1.5 and Blackmagic SDK 10.7
+All credits go to https://github.com/dche for the original scripts and jbialy for the updates. I later updated to use ffmpeg 3.2.4 and Blackmagic SDK 10.8.5
